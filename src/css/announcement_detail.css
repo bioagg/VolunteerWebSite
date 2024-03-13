@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.announcement-detail-container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#announcementDescription {
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+    line-height: 1.6;
+    margin-left: 2rem;
+}
+
+.offer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.offer-form label {
+    margin-bottom: 0.5rem;
+}
+
+.offer-form input[type="number"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 20%;
+}
+
+.submit-offer-btn {
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: auto;
+}
+
+.submit-offer-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for responsive layout */
+@media (max-width: 768px) {
+    .announcement-detail-container {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+
+    .offer-form input[type="number"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
