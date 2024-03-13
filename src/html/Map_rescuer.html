@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Volunteer</title>
+        <link rel="icon" type="image/png" href="Images/Logo.PNG">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/Map_rescuer.css">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/leaflet-search.min.css">
+        <link rel="stylesheet" href="css/MarkerCluster.css">
+        <link rel="stylesheet" href="css/MarkerClustern.Default.css">
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="Logo">
+                <img src="Images/Logo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="dashboard">
+                <button class = "dashboard_btn" id="homeButton">Home</button>
+                <button class = "dashboard_btn" id="loadmanagementbutton">Load management</button>
+                <button class = "dashboard_btn" id="mapButton">Map</button>
+                <button id="logoutButton" class="logout">Logout</button>
+            </div>   
+        </div>
+
+        <div id = "map">
+            <div class="filter-controls">
+                <!-- <button class="toggle-button" onclick="togglePanel('filter-controls')">Toggle Filter</button> -->
+                <label><input type="checkbox" id="filter-taken-requests" checked>Show Taken Requests</label>
+                <label><input type="checkbox" id="filter-pending-requests" checked>Show Pending Requests</label>
+                <label><input type="checkbox" id="filter-taken-offers" checked>Show Taken Offers</label>
+                <label><input type="checkbox" id="filter-pending-offers" checked>Show Pending Offers</label>
+                <label><input type="checkbox" id="filter-active-vehicles" checked>Show Active Vehicles</label>
+                <label><input type="checkbox" id="filter-idle-vehicles" checked>Show Idle Vehicles</label>
+                <label><input type="checkbox" id="filter-polylines" checked>Show Polylines</label>
+            </div>
+
+            <div class="task-panel">
+                <!-- <button class="toggle-button" onclick="togglePanel('task-panel')">Toggle Tasks</button> -->
+                <h2>Current Tasks</h2>
+                <table id="tasksTable">
+                    <thead>
+                        <tr>
+                            <th>Request Type</th>
+                            <th>Name of User</th>
+                            <th>Telephone Number</th>
+                            <th>Date Added</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Task rows will be added here -->
+                    </tbody>
+                </table>
+            </div>          
+        </div>
+
+    </body>
+    <script type="text/javascript" src="js/check_login.js"></script>
+    <script type="text/javascript" src="js/initialize_map_rescuer.js"></script>
+    <script type="text/javascript" src="js/map_rescuer.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript" src="js/leaflet-search.min.js"></script>
+    <script type="text/javascript" src="js/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Volunteer</title>
+        <link rel="icon" type="image/png" href="Images/Logo.PNG">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/Welcome_page_admin.css">
+        <link rel="stylesheet" href="css/stock_admin.css">
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="Logo">
+                <img src="Images/Logo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="dashboard">
+                <button class = "dashboard_btn" id="homeButton">Home</button>
+                <button class = "dashboard_btn" id="mapButton">Map</button>
+                <button class = "dashboard_btn" id="stockButton">Stock</button>
+                <button class = "dashboard_btn" id="statisticsButton">Statistics</button>
+                <button class = "dashboard_btn" id="registerRescuersButton">Register rescuers</button>
+                <button class = "dashboard_btn" id="announcementsButton">Announcements</button>
+                <button id="logoutButton" class="logout">Logout</button>
+            </div>   
+        </div>
+
+        <!--This is the inventory html table-->
+        <div class="inventory">
+            <div class="filter-section">
+                <div id="categoryFilters" class="filter-controls">
+                    <!-- Category checkboxes will be generated here -->
+                </div>
+            </div>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Quantity Taken</th> 
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    
+
+    </body>
+    <script type="text/javascript" src="js/check_login.js"></script>
+    <script type="text/javascript" src="js/stock_admin.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+</html>

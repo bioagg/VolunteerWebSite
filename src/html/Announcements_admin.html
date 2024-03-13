@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Volunteer</title>
+        <link rel="icon" type="image/png" href="Images/Logo.PNG">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/Welcome_page_admin.css">
+        <link rel="stylesheet" href="css/Announcements_admin.css">
+        <link rel="stylesheet" href="css/stock_admin.css">
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="Logo">
+                <img src="Images/Logo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="dashboard">
+                <button class = "dashboard_btn" id="homeButton">Home</button>
+                <button class = "dashboard_btn" id="mapButton">Map</button>
+                <button class = "dashboard_btn" id="stockButton">Stock</button>
+                <button class = "dashboard_btn" id="statisticsButton">Statistics</button>
+                <button class = "dashboard_btn" id="registerRescuersButton">Register rescuers</button>
+                <button class = "dashboard_btn" id="announcementsButton">Announcements</button>
+                <button id="logoutButton" class="logout">Logout</button>
+            </div>   
+        </div>
+
+        <div class="announcements">
+            <form id="announcementForm">
+                <h2>Create Announcement</h2>
+                <div class="form-group">
+                    <label for="announcementTitle">Title:</label>
+                    <input type="text" id="announcementTitle" placeholder="Enter title" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="announcementDescription">Description:</label>
+                    <textarea id="announcementDescription" placeholder="Enter description" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="productSelect">Product:</label>
+                    <select id="productSelect">
+                        <!-- Options populated by JavaScript -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="requiredQuantity">Required Quantity:</label>
+                    <input type="number" id="requiredQuantity" placeholder="Enter quantity">
+                </div>            
+    
+                <button type="submit" class="submit-btn">Create Announcement</button>
+            </form>
+        </div>
+    
+
+    </body>
+    <script type="text/javascript" src="js/check_login.js"></script>
+    <script type="text/javascript" src="js/announcements_admin.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Volunteer</title>
+        <link rel="icon" type="image/png" href="Images/Logo.PNG">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/Load_management_rescuer.css">
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="Logo">
+                <img src="Images/Logo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="dashboard">
+                <button class = "dashboard_btn" id="homeButton">Home</button>
+                <button class = "dashboard_btn" id="loadmanagementbutton">Load management</button>
+                <button class = "dashboard_btn" id="mapButton">Map</button>
+                <button id="logoutButton" class="logout">Logout</button>
+            </div>   
+        </div>
+
+        <div class="main_body">
+            
+            <div class="loadManagementInfo">
+                <!-- General information about load management will be displayed here -->
+                <h2>Load Management Information</h2>
+                <p>Welcome to the Load Management System. Here you can load items into your vehicle when you're within 100 meters of the base. Click 'Load' to select items from the base's inventory. The 'Unload' button transfers all items from your load back to the base's inventory.</p>
+                <p>Note: There's no limitation on the load each vehicle can carry.</p>
+            </div>
+
+            <div class="product_table">
+                <div class="first_table_div">
+                    <div class="available_products">
+                        <h3 class="product_heading">Available Products</h3>
+                        <table id="productsTable" class="productsTable">
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Product Description</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Product rows will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="second_table_div">
+                    <div class="current_rescuer_inventory">
+                        <h3 class="rescuer_heading">Your inventory</h3>
+                        <table class="rescuerInventory">
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Product rows will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </body>
+    <script type="text/javascript" src="js/check_login.js"></script>
+    <script type="text/javascript" src="js/rescuer_dashboard.js"></script>
+    <script type="text/javascript" src="js/load_management_rescuer.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+</html>

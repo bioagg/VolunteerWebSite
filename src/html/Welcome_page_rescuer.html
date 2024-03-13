@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Volunteer</title>
+        <link rel="icon" type="image/png" href="Images/Logo.PNG">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/Welcome_page_rescuer.css">
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="Logo">
+                <img src="Images/Logo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="dashboard">
+                <button class = "dashboard_btn" id="homeButton">Home</button>
+                <button class = "dashboard_btn" id="loadmanagementbutton">Load management</button>
+                <button class = "dashboard_btn" id="mapButton">Map</button>
+                <button id="logoutButton" class="logout">Logout</button>
+            </div>   
+        </div>
+
+        <div class="main_body">
+            <div class="welcome_section">
+                <h1>Welcome to the Rescuer Dashboard!</h1>
+                <p>Here you can manage your tasks, view the map, and much more.</p>
+            </div>
+            <div class="info_section">
+                <div class="info_card">
+                    <h2>Load Management</h2>
+                    <p>View and manage your current tasks.</p>
+                </div>
+                <div class="info_card">
+                    <h2>Map Access</h2>
+                    <p>Access the interactive map for location-based information.</p>
+                </div>
+                <!-- <div class="info_card">
+                    <h2>Updates & Announcements</h2>
+                    <p>Stay updated with the latest news and announcements.</p>
+                </div> -->
+            </div>
+        </div>
+
+    </body>
+    <script type="text/javascript" src="js/check_login.js"></script>
+    <script type="text/javascript" src="js/rescuer_dashboard.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+</html>

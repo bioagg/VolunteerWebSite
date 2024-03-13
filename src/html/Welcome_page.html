@@ -1,0 +1,163 @@
+<!-- <?php
+session_start(); // Start the session
+
+// Check if the user is logged in, if not then redirect to login page
+if (!isset($_SESSION['user'])) {
+    header('Location: login.html'); // Redirect to login page
+    exit;
+}
+?> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Volunteer</title>
+        <link rel="icon" type="image/png" href="Images/Logo.PNG">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/navigation_menu.css">
+        <link rel="stylesheet" href="css/footer_menu.css">
+        <link rel="stylesheet" href="css/main_style.css">
+        <link rel="stylesheet" href="css/Welcome_page.css">
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="navigation_menu">
+                <ul class="menu">
+
+                    <li class="menu_item active">
+                        <a href="Welcome_page.html">Home</a>
+                    </li>
+    
+                    <li class="menu_item">
+                        <a href="Requests.html">Requests</a>
+                    </li>
+    
+                    <li class="menu_item">
+                        <a href="Announcements_Offers_user.html">Announcements & Offers</a>
+                    </li>
+    
+                    <!--Logout option in navbar menu-->
+                    <li class="menu_item">
+                        <a class="logout">Logout</a>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+
+        <div class="main_body">
+            <div class="supertitle">
+                <h2>Welcome to Project Web 2024</h2>
+            </div>
+
+            <div class="intro_paragraph">
+                <p>
+                    Welcome to Volunteer, which specifically designed for communities impacted by natural disasters! This collaborative platform is a lifeline for citizens caught in 
+                    crises like floods or earthquakes. It enables individuals to signal their urgent needs - be it for water, food, or medicine - or to offer surplus items for donation. 
+                    Our system empowers rescue teams and volunteers to efficiently coordinate aid distribution directly from their vehicles, turning them into mobile support units. 
+                    The app includes a dynamic map display, showcasing real-time requests and donations, allowing for targeted and timely responses. Additionally, our centralized 'rescue base'
+                    acts as a hub for managing resources and coordinating relief efforts. 
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer_menu">
+            <div class="grid_footer">
+                <div class="send_info">
+                    <h1 class="footer_heading">Start using Volunteer today</h1>
+                    <input type="email" class="input_email_footer" placeholder="&nbsp;">
+                    <span class="input_placeholder">Your Email</span>
+                    <button class="send_email_button"></button>
+                </div>
+                <div class="search_image">
+                    <img src="Images/search_image.png">
+                </div>
+
+                <div class="data_info">
+                    <img src="Images/Logo-removebg-preview.png" class="logo" alt="Logo">
+                    <p class="Inform_user">
+                        A collaborative platform to support each other.
+                    </p>
+                </div>
+
+                <div class="navigation_options">
+                    <h2 class="help">Navigate</h2>
+                    <span>
+                        <div class="href-footer">
+                            <a class="footer_link" href="Welcome_page.html">Home</a>
+                        </div>
+
+                        <div class="href-footer">
+                            <a class="footer_link" href="Requests.html">Requests</a>
+                        </div>
+
+                        <div class="href-footer">
+                            <a class="footer_link" href="Announcements_Offers.html">Announcements & Offers</a>
+                        </div>
+
+                        <div class="href-footer">
+                            <a class="logout footer_link">Logout</a>
+                        </div>
+                    </span>
+                </div>
+
+                <div class="terms">
+
+                    <div class="href-footer">
+                        <a class="footer_link" href="#">Terms and Conditions</a>
+                    </div>
+
+                    <div class="href-footer">
+                        <a class="footer_link" href="#">Privacy Policy</a>
+                    </div>
+
+                    <div class="href-footer">
+                        <a class="footer_link" href="#">Cookie Policy</a>
+                    </div>
+                </div>
+
+                <div class="social_media_footer">
+                    <div class="chat_details">
+                        <p class="chat">Let's chat!</p>
+                        <a href="example@example.com" class="contact-details">example@example.com</a>
+                    </div>
+                    
+                    <div class="social_media">
+                        <ul>
+                            <li>
+                                <a class="facebook" href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="twitter" href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="instagram" href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="google" href="#">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/check_login.js"></script>
+    <script type="text/javascript" src="js/sub_to_info.js"></script>
+    <script type="text/javascript" src="js/footer_style.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CollectiSearch</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="Images/Logo.PNG">
+        <link rel="stylesheet" href="css/Register.css">
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <label class="Sign_up_label">Sign up</label>
+                <hr>
+                <!-- username input -->
+                <input type="text" placeholder="Enter Username..." class="register_username" maxlength="50" autocomplete="name" required>
+                <div class="alert_name"></div>
+
+                <!-- name input -->
+                <input type="text" placeholder="Enter your Name..." class="register_name" maxlength="50" required>
+                <div class="alert_user_name"></div>
+
+                <!-- Last name input -->
+                <input type="text" placeholder="Enter your Last Name..." class="register_lastname" maxlength="50" required>
+                <div class="alert_user_lastname"></div>
+
+                <!-- Container for country and phone -->
+                <div class="country-phone-container">
+                    <!-- Country selection -->
+                    <div class="input-group">
+                        <select class="country-select" required>
+                            <option value="">Select Country...</option>
+                        </select>
+                    </div>
+                    <span class="displayed-text"></span>
+                    <!-- Country options will be populated here by js script-->
+
+                    <!-- Phone number input -->
+                    <input type="tel" placeholder="Phone Number" class="register_phone" maxlength="15" autocomplete="tel" required>
+                </div>
+                <div class="alert_phone"></div>
+
+                <!-- Lat, Lng position input-->
+                <div class="map_position_input">
+                    <input type="number" class="latitude_pos" name="latitude" step="0.000001" placeholder="Enter your latitude position" required pattern="^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$" title="Enter a valid longitude (-180 to 180)">
+                    <input type="number" class="longitude_pos" name="longitude" step="0.000001" placeholder="Enter your longitude position" required pattern="^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$" title="Enter a valid longitude (-180 to 180)">
+                </div>
+                <div class="alert_map_position"></div>
+
+                <!-- Email input -->
+                <input type="email" placeholder="Enter Email..." class="register_email" maxlength="64" autocomplete="email" required>
+                <div class="alert_email"></div>
+
+                <!-- Password input -->
+                <input type="password" placeholder="Enter Password..." class="register_password" maxlength="1024" autocomplete="off" required>
+                <div class="alert_pswd"></div>
+
+                <!-- Repeat password input -->
+                <input type="password" placeholder="Repeat Password..." class="register_password_repeat" maxlength="1024" autocomplete="off" required>
+                <div class="alert_pswd_repeat"></div>
+
+                <hr>
+                <p>By creating an account you agree to our <a href="Term.html">Terms & Privacy</a>.</p>
+
+                <button type="button" class="register_btn">Register</button>
+
+                <p>Already have an account? <a href="Login_form.html">Sign in</a>.</p>
+                <!--If you want to initiate the create of the database you have to uncomment only the next line-->
+                <!-- It is here only to initiate db -->
+                <button type="button" class="Initiate">Initiate</button>
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/telephone_country_numbers.js"></script>
+    <script type="text/javascript" src="js/register_style.js"></script>
+    <script type="text/javascript" src="js/Register_to_app.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Volunteer</title>
+        <link rel="icon" type="image/png" href="Images/Logo.PNG">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/Welcome_page_admin.css">
+        <link rel="stylesheet" href="css/Register_rescuer_admin.css">
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="Logo">
+                <img src="Images/Logo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="dashboard">
+                <button class = "dashboard_btn" id="homeButton">Home</button>
+                <button class = "dashboard_btn" id="mapButton">Map</button>
+                <button class = "dashboard_btn" id="stockButton">Stock</button>
+                <button class = "dashboard_btn" id="statisticsButton">Statistics</button>
+                <button class = "dashboard_btn" id="registerRescuersButton">Register rescuers</button>
+                <button class = "dashboard_btn" id="announcementsButton">Announcements</button>
+                <button id="logoutButton" class="logout">Logout</button>
+            </div>   
+        </div>
+
+        <div class="register_form">
+            <form class="rescuer-register-form">
+                <h2>Register Rescuer</h2>
+                <div class="form-group">
+                    <label for="register_username">Username:</label>
+                    <input type="text" class="register_username" placeholder="Enter username">
+                    <div class="alert_name"></div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="register_name">Name:</label>
+                    <input type="text" class="register_name" placeholder="Enter name">
+                    <div class="alert_user_name"></div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="register_lastname">Last Name:</label>
+                    <input type="text" class="register_lastname" placeholder="Enter last name">
+                    <div class="alert_user_lastname"></div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="country-select">Country Code:</label>
+                    <select class="country-select">
+                        <option>Select Country...</option>
+                        <!-- Add country code options here -->
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="register_phone">Phone:</label>
+                    <input type="tel" class="register_phone" placeholder="Enter phone number">
+                    <div class="alert_phone"></div>
+                </div>
+            
+                <div class="form-group">
+                    <label>Map Position:</label>
+                    <input type="text" class="latitude_pos" placeholder="Latitude">
+                    <input type="text" class="longitude_pos" placeholder="Longitude">
+                    <div class="alert_map_position"></div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="register_email">Email:</label>
+                    <input type="email" class="register_email" placeholder="Enter email">
+                    <div class="alert_email"></div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="register_password">Password:</label>
+                    <input type="password" class="register_password" placeholder="Enter password">
+                    <div class="alert_pswd"></div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="register_password_repeat">Repeat Password:</label>
+                    <input type="password" class="register_password_repeat" placeholder="Repeat password">
+                    <div class="alert_pswd_repeat"></div>
+                </div>
+            
+                <button type="button" class="register_btn">Register Rescuer</button>
+            </form>
+        </div>
+    
+
+    </body>
+    <script type="text/javascript" src="js/check_login.js"></script>
+    <script type="text/javascript" src="js/telephone_country_numbers.js"></script>
+    <script type="text/javascript" src="js/register_rescuer_admin.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+</html>
