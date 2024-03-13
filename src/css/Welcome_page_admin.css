@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    width: 15%;
+    height: 100vh;
+    background-color: #fafafa;
+    flex-direction: column;
+}
+
+.Logo {
+    padding: 10px;
+}
+
+.Logo img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard button, .logout {
+    margin: 1rem;
+    padding: 0.7rem;
+    /* border-radius: 5px; */
+    background-color: #fafafa;
+    /* border-color: none; */
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard button:hover {
+    background-color: #1dbf73;
+    border-radius: 5px;
+    color: white;
+}
+
+.main_body {
+    margin-left: 1.5rem;
+    background-color: #fcfcfc;
+    width: 85%;
+}
+
+.hello_header {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.general_statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    padding: 4rem;
+}
+
+.stat_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    min-width: 15vh; /* Adjust as needed */
+    min-height: 10vh;
+    width: 20vh;
+    height: 15vh;
+    position: relative;
+    white-space: nowrap;
+}
+
+.menu_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 10%; /* Position just below the button */
+    left: 60%;   /* Align with the left edge of the button */
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.show_menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styles for SweetAlert Modal */
+.swal2-popup {
+    font-family: Arial, sans-serif; /* Change the font family as per your preference */
+}
+
+/* Styles for any form within the SweetAlert Modal */
+.swal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.swal-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.swal-form input[type="text"],
+.swal-form textarea {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.swal-form input[type="text"]:focus,
+.swal-form textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Change the border color on focus */
+}
+
+.swal-form textarea {
+    min-height: 80px;
+    resize: vertical; /* Allow vertical resizing, you can change it to 'none' if you don't want resizing */
+}
+
+/* Add some margin to the break lines for better spacing */
+.swal-form br {
+    margin: 5px 0;
+}
+
+.swal-table {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    border-collapse: collapse;
+}
+
+.swal-table th, .swal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.swal-table th {
+    background-color: #f2f2f2;
+    white-space: nowrap;
+}
+
+.swal-table td {
+    white-space: nowrap;
+}
+
+.swal-table button {
+    white-space: nowrap;
+}
+
+/* Styles for SweetAlert Modal with Scrolling */
+.swal2-popup .swal2-html-container .swal-table {
+    display: block;
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border-collapse: collapse;
+    margin-top: 20px; /* Add some space above the table */
+}
+
+.swal2-popup .swal2-html-container {
+    max-width: 100%; /* Ensure content does not exceed the modal width */
+}
+
+/* Ensure table headers and cells do not wrap text unnecessarily */
+.swal2-popup .swal2-html-container .swal-table th,
+.swal2-popup .swal2-html-container .swal-table td {
+    white-space: nowrap;
+    padding: 10px; /* Adjust padding for better spacing */
+}
+
+/* Additional styling to ensure consistency */
+.swal2-popup .swal2-html-container .swal-table thead th {
+    background-color: #fafafa; /* Header background */
+    color: #333; /* Header text color */
+}
+
+.swal2-popup .swal2-html-container .swal-table tbody td {
+    background-color: #fff; /* Cell background */
+    color: #666; /* Cell text color */
+}
+
+.swal2-popup .swal2-html-container .swal-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Zebra striping for rows */
+}

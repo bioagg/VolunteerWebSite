@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    width: 15%;
+    height: 100vh;
+    background-color: #fafafa;
+    flex-direction: column;
+}
+
+.Logo {
+    padding: 10px;
+}
+
+.Logo img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard button, .logout {
+    margin: 1rem;
+    padding: 0.7rem;
+    /* border-radius: 5px; */
+    background-color: #fafafa;
+    /* border-color: none; */
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard button:hover {
+    background-color: #1dbf73;
+    border-radius: 5px;
+    color: white;
+}
+
+.main_body {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #e9ecef;
+    margin-left: 1rem;
+}
+
+.welcome_section h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.welcome_section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.info_section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.info_card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.info_card h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.info_card p {
+    font-size: 1rem;
+    color: #555;
+}

@@ -1,0 +1,18 @@
+.main_body {
+    font-family: "Noto Sans", sans-serif;
+    overflow-y: auto;
+  }
+
+  .supertitle {
+    width: 100%;
+    border-bottom: 1px solid #727272;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .supertitle h2 {
+    color: #715518;
+  }

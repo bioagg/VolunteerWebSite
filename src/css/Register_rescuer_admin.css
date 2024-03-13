@@ -1,0 +1,90 @@
+.register_form {
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+.rescuer-register-form {
+    max-width: 700px;
+    margin: 2rem auto; 
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.rescuer-register-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    height: 20px;
+}
+
+.register_btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.register_btn:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        margin-left: 1rem; /* Adjusted for smaller screens */
+        margin-right: 1rem;
+    }
+
+    .rescuer-register-form {
+        padding: 15px;
+    }
+}

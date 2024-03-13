@@ -1,0 +1,122 @@
+.main_body {
+    padding: 20px;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.announcementsSection {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.announcementsSection h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.announcement {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.announcement:hover {
+    background-color: #f1f1f1;
+}
+
+.announcementTitle {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.announcementTitle:hover {
+    text-decoration: underline;
+}
+.announcementDescription {
+    color: #555;
+    margin-top: 0;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #e9e9e9;
+}
+
+.offersSection {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offersSection h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#offersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#offersTable thead {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#offersTable th, #offersTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#offersTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.delete-offer-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-offer-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main_body {
+        padding: 10px;
+    }
+
+    .announcement {
+        padding: 8px;
+    }
+}

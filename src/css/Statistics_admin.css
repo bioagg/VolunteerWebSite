@@ -1,0 +1,98 @@
+.statistics {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.canvas-container {
+    width: 100%;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-top: 20px; /* Space between date selection and chart */
+}
+
+#statisticsChart {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .statistics {
+        width: 95%;
+    }
+
+    .canvas-container {
+        margin-top: 10px;
+    }
+}
+
+/* Additional styling for buttons and form elements inside the statistics panel */
+.statistics button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.statistics button:hover {
+    background-color: #0056b3;
+}
+
+.statistics select, .statistics input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.statistics input[type="date"]:focus, .statistics select:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.date-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.date-selection input[type="date"] {
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.date-selection button {
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.date-selection button:hover {
+    background-color: #45a049;
+}
+
+#endDate {
+    margin-right: 10rem;
+}
+

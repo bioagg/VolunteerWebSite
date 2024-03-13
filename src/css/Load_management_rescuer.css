@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    width: 15%;
+    height: 100vh;
+    background-color: #fafafa;
+    flex-direction: column;
+}
+
+.main_body {
+    margin-left: 1.5rem;
+    background-color: #fcfcfc;
+    width: 85%;
+}
+
+.Logo {
+    padding: 10px;
+}
+
+.Logo img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard button, .logout {
+    margin: 1rem;
+    padding: 0.7rem;
+    /* border-radius: 5px; */
+    background-color: #fafafa;
+    /* border-color: none; */
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard button:hover {
+    background-color: #1dbf73;
+    border-radius: 5px;
+    color: white;
+}
+
+.loadManagementInfo {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #C7D2FE;
+    color: #333;
+}
+
+.loadManagementInfo h2 {
+    color: #1E293B;
+}
+
+.loadManagementInfo p {
+    font-size: 1em;
+}
+
+/* Products div styling */
+.product_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.first_table_div, .second_table_div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.available_products, .current_rescuer_inventory {
+    display: grid;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.current_rescuer_inventory {
+    margin-right: 10rem;
+}
+/* Headings css */
+.product_heading, .rescuer_heading {
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.product_table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.product_table th,
+.product_table td {
+    padding: 12px 15px;
+}
+
+.product_table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Hover effect for rows */
+.product_table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.product_table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.product_table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive table */
+@media screen and (max-width: 768px) {
+    .product_table {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* Additional styling for quantity - highlighting low stock */
+.product_table .low-stock {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.product_table .high-stock {
+    color: #009879; /* Match the header color for high stock */
+}
+
+/* Rescuer inventory */
+/* .inventoryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.inventoryTable th, .inventoryTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.inventoryTable th {
+    background-color: #f2f2f2;
+}
+
+.inventoryTable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+} */
+
+/* load, unload buttons */
+.div_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Common styles for both buttons */
+.loadButton, .unloadButton {
+    padding: 0.8rem 1.5rem; /* Uniform padding */
+    margin: 0 1rem; /* Space between buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions for various properties */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Specific styles for load button */
+.loadButton {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+}
+
+/* Specific styles for unload button */
+.unloadButton {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+}
+
+/* Hover and focus effects */
+.loadButton:hover, .unloadButton:hover,
+.loadButton:focus, .unloadButton:focus {
+    background-color: darken(#4CAF50, 10%); /* Darken the background on hover/focus */
+    transform: translateY(-2px); /* Slight raise effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .loadButton, .unloadButton {
+        padding: 0.6rem 1rem; /* Smaller padding on smaller screens */
+        font-size: 0.9rem; /* Smaller font size for better fit */
+    }
+}
+
+/* css for sweet alert */
+.swal2-popup {
+    width: 120rem;
+    height: 25rem;
+}
+
+.swal-wide {
+    width: 80%; /* Adjust the width as needed */
+}
+
+.swal-table {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto; /* Makes the table scrollable */
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+.swal-table th, .swal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+/* Larger font size for screens wider than 1920px */
+@media screen and (min-width: 1920px) {
+    .loadManagementInfo p {
+        font-size: 0.85em; 
+    }
+}
